@@ -9,7 +9,7 @@ function openWindow() {
 }
 
 function closeWindow() {
-  if (popupWindow) {
+  if (popupWindow && !popupWindow.closed) {
     popupWindow.close();
   }
 }
